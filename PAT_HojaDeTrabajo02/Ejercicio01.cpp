@@ -14,6 +14,7 @@ Node<char>* Ejercicio01::rotateRight(Node<char>* head, int k)
     }
 
     k = k % length;
+
     if (k == 0) {
         return head;
     }
@@ -24,6 +25,9 @@ Node<char>* Ejercicio01::rotateRight(Node<char>* head, int k)
         newTail = newTail->next;
     }
 
+    newHead = newTail->next;
+
+    newTail->next = nullptr;
     tail->next = head;
 
     return newHead;
