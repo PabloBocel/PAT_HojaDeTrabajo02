@@ -2,6 +2,7 @@
 
 #include "Node.h"
 
+
 class Ejercicio02
 {
 public:
